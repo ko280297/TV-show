@@ -1,0 +1,76 @@
+.show-detail-container {
+  display: flex;
+  justify-content: flex-start;
+  /* Adjust as needed */
+}
+.show-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5px 0px 10px 0px;
+}
+.content-name {
+  font-weight: bold;
+}
+.left {
+  padding: 10px;
+}
+.right {
+  padding: 10px;
+  line-height: 90%;
+}
+.booking-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.booking-form button[type="book"] {
+  background-color: #007bff;
+}
+/* ShowDetails.css */
+.summary {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  font: italic;
+  max-width: 1200px;
+  margin-top: 40px;
+  /* Add other styles as needed */
+}
+/* Add this to your existing CSS file or create a new one */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for tablets and smaller screens */
+
+  .show-detail-container {
+    flex-direction: column; /* Stack containers vertically on smaller screens */
+  }
+
+  .left,
+  .right {
+    width: 100%; /* Make both left and right containers full-width on smaller screens */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .booking-form button {
+    margin-right: 0; /* Remove margin between buttons on smaller screens */
+    margin-top: 10px; /* Add some space between buttons and content */
+  }
+
+  .summary {
+    margin-top: 20px; /* Adjust margin for summary on smaller screens */
+  }
+}
+@media only screen and (max-width: 480px) {
+  .show-name {
+    font-size: 30px; /* Adjust font size for mobile */
+  }
+  .content-name {
+    font-weight: bold;
+  }
+  .booking-form button {
+    padding: 8px; /* Adjust button padding for mobile */
+  }
+}

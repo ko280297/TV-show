@@ -1,0 +1,172 @@
+/* Add this CSS for the grid layout */
+/* Updated CSS for the grid layout */
+.show-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list-title {
+  background-color: black;
+}
+.list-title h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.show-card {
+  width: 23%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+/* Updated styling for the cards */
+.show-card img {
+  width: 100%; /* Make the image take up the entire width of the card */
+  height: auto;
+}
+
+/* Optionally, add additional styling to the cards */
+.show-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.show-card {
+  width: 23%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Optionally, add additional styling to the cards */
+.show-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.show-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.show-genre,
+.show-language,
+.show-rating {
+  font-size: 1em;
+  color: #555;
+  margin: 0.1rem;
+}
+
+.show-rating {
+  color: rgb(15, 141, 53); /* Adjust the color as needed */
+  margin-bottom: 0.1rem;
+}
+
+.show-details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+}
+.show-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .show-card {
+    width: 48%; /* Adjust the width for tablets in landscape mode */
+  }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 767px) {
+  .show-card {
+    width: 100%; /* Full width for mobile screens */
+  }
+}
+
+/* Optionally, add additional styling to the cards */
+.show-card img {
+  width: 100%; /* Make the image take up the entire width of the card */
+  height: auto;
+}
+
+/* Optionally, add hover effect */
+.show-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.show-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+
+.show-genre,
+.show-language,
+.show-rating {
+  font-size: 1em;
+  color: #555;
+  margin: 0.1rem;
+}
+
+.show-rating {
+  color: rgb(15, 141, 53); /* Adjust the color as needed */
+  margin-bottom: 0.1rem;
+}
+
+.show-details-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+}
+
+.show-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-not-available {
+  height: 485px; /* Adjust the height as needed to match the images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f0f0f0; /* Background color for the placeholder */
+  color: #555; /* Text color for the placeholder */
+}
+
+/* Optionally, you can add some styling for better visibility */
+.image-not-available {
+  font-size: 16px;
+  font-weight: bold;
+}

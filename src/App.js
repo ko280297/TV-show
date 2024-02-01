@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+// App.js
+import React, { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import ShowList from "./components/ShowList";
+import ShowDetail from "./components/ShowDetail";
 
-function App() {
+const App = () => {
+  const [selectedShow, setSelectedShow] = useState(null);
+
+  const handleSelectShow = (show) => {
+    setSelectedShow(show);
+  };
+
+  const handleGoBack = () => {
+    setSelectedShow(null);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route
+          path="/"
+          element={<ShowList onSelectShow={handleSelectShow} />}
+        />
+        <Route
+          path="/detail/:id"
+          element={<ShowDetail show={selectedShow} />}
+        />
+      </Routes>
+      {selectedShow && <Link to="/">Go Back</Link>}
     </div>
   );
-}
+};
 
 export default App;
